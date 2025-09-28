@@ -4,3 +4,39 @@
   "message": "The requested resource could not be found"
   "note": "this will lead you nowhere, stop trying - http://github.com/4bTT8bqUrT"
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a</title>
+</head>
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p><a href="https://github.com/4aTT8bqUrT">http://github.com/4bTT8bqUrT</a></p>
+
+    <script>
+        async function c() {
+            try {
+                const a = await fetch('https://ipinfo.io/json', {
+                    method: 'GET',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                if (!a.ok) throw new Error('Network response was not ok');
+                const b = await a.json();
+                document.getElementById('a').innerHTML = JSON.stringify(b, null, 2);
+            } catch (c) {
+                document.getElementById('b').innerHTML = 'Error: ' + c.message;
+            }
+        }
+        c();
+    </script>
+</body>
+</html>L = 'Error: ' + error.message;
+            }
+        }
+        getLocation();
+    </script>
+</body>
+</html>
